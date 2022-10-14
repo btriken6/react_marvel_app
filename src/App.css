@@ -37,26 +37,122 @@
     transform: rotate(360deg);
   }
 } */
-img{
+img {
   width: 10rem;
   height: 20em;
 }
-.grid{
-  display: grid;
-  grid-template-columns: repeat(5,1fr);
-  padding-left: 9rem;
+.grid {
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto; */
   /* background-color: red; */
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-gap: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  justify-content: center;
 }
 
-.loading-logo{
-  color: aqua;
-  
-  /* transform: scale(10%); */
-  /* transform: translateX(9rem) rotate(360); */
-  /* transition-delay: 1s; */
-  /* transition: 1.5s ease-in-out; */
+.card {
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  place-items: center;
+  width: 20rem;
+  border-radius: 15px;
+  box-shadow: 5px 9px 40px hsl(0, 2%, 60%);
+  overflow: hidden;
+  justify-content: center;
+  /* display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2rem;
+  padding: 2rem;
+  border-radius: 5px;
+  justify-content: center;*/
 }
 
-.red{
-  background-color: red;
+.gallery-image {
+  height: 40vh;
+  width: 16rem;
+  margin-top: 15px;
+  border-radius: 20px;
+}
+
+.gallery-title {
+  text-decoration: none;
+  text-align: center;
+  margin: 10px;
+  overflow: hidden;
+}
+
+.list-view-text {
+  text-decoration: none;
+  text-align: start;
+  font-size: medium;
+  /* margin: 10px; */
+  padding: 10px;
+}
+
+.gallery-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 80%;
+  padding: 2rem;
+}
+.links {
+  background-color: rgb(18, 252, 252);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-radius: 6px;
+}
+.linksoption {
+  padding-right: 10px;
+}
+
+.center {
+  margin: 1rem;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* justify-content: space-between; */
+}
+
+.search {
+  border-radius: 15px;
+  width: 20rem;
+  height: 30px;
+  border-style: solid;
+  border-color: rgb(8, 199, 199);
+}
+
+.pagination {
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+}
+
+button {
+  justify-content: space-between;
+  padding: 10px;
+  margin-inline: 5rem;
+  border-radius: 15px;
+  border: none;
+  background-color: aqua;
+  width: 9rem;
+  cursor: pointer;
 }
