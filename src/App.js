@@ -12,7 +12,6 @@ function App() {
     <>
     <Navbar/>
     <Search/> 
-    {/* <Pagination/> */}
     <Routes>
       <Route path='/' element={<MarvelGallery/>}/>
       <Route path="/details/" element={<DetailView/>}/>
